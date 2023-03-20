@@ -1,3 +1,13 @@
+/*
+Extra small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px
+
+*/
+
 import React from "react";
 import MyPic from "../img/my_picture.jpg";
 import classes from "../css/Home.module.css";
@@ -8,7 +18,7 @@ const curYear = new Date().getFullYear();
 function About() {
   return (
     <div className="row justify-content-center">
-      <div className="about-container container-fluid py-4 px-5 row row-cols-1 row-cols-md-2">
+      <div className="about-container px-1 py-3 px-lg-3 py-xl-5 row row-cols-1 row-cols-md-2 gap-2 justify-content-center">
         <div className={classes["about-content"] + " col"}>
           <h1>About</h1>
           <p>
@@ -25,11 +35,11 @@ function About() {
             <a href="#">View Projects &rarr;</a>
           </div>
         </div>
-        <div className="about-image col-3 d-flex justify-content-center">
+        <div className="about-image col col-md-5 d-flex justify-content-center">
           <img
             src={MyPic}
             rel="Profile picture of Merick Icy Agustin"
-            className={classes["img-profile"]}
+            className={classes["img-profile"] + " image-fluid"}
           />
         </div>
       </div>
