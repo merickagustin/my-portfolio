@@ -1,0 +1,30 @@
+.img-profile {
+  border: 0.5rem solid rgba(51, 51, 51, 0.2);
+  border-radius: 100%;
+  height: 16rem;
+  width: 16rem;
+}
+
+@media (min-width: 1406px) {
+  .img-profile {
+    height: 24rem;
+    width: 24rem;
+  }
+}
+
+.name {
+  font-size: 1.6rem;
+}
+
+.about-content {
+  font-size: 1.4rem;
+}
+
+.experience-container {
+  background-color: #bde0fe;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}

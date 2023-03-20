@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
+
+/* custom.scss */
+$primary: #a2d2ff;
+$secondary: #bde0fe;
+// $success: #3e8d63;
+// $info: #7854e4;
+// $warning: #b8c924;
+// $danger: #d62518;
+// $light: #f8f9fa;
+$dark: #313f4c;
+
+/**************NAVIGATION*********************/
+$nav-link-color: #415466;
+$nav-link-hover-color: #101519;
+
+$font-family-base: "Roboto Slab", serif;
+$navbar-brand-font-size: 1.5rem;
+
+/******************SPACER*********************/
+$spacer: 4rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.5,
+  2: $spacer * 0.75,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 4,
+);
+
+//IMPORT BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap";
