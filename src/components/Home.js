@@ -18,7 +18,14 @@ const curYear = new Date().getFullYear();
 function About() {
   return (
     <div className="row justify-content-center">
-      <div className="about-container px-1 py-3 px-lg-3 py-xl-5 row row-cols-1 row-cols-md-2 gap-2 justify-content-center">
+      <div className="about-container px-1 py-3 px-lg-3 py-xl-4 row row-cols-1 row-cols-md-2 gap-2 justify-content-center">
+        <div className="about-image px-1 px-md-0 col col-md-4 d-flex justify-content-center">
+          <img
+            src={MyPic}
+            rel="Profile picture of Merick Icy Agustin"
+            className={classes["img-profile"] + " image-fluid"}
+          />
+        </div>
         <div className={classes["about-content"] + " col"}>
           <h1>About</h1>
           <p>
@@ -30,21 +37,16 @@ function About() {
             Computer Science.
           </p>
           <p>I'm currently exploring new techs in building web applications.</p>
-          <div className="about-links">
-            <a href="#">Download CV</a>
+          <div className="about-links d-flex justify-content-center align-items-center gap-1">
+            <a href="#" className={classes["download-cv"]}>
+              Download CV
+            </a>
             <a href="#">View Projects &rarr;</a>
           </div>
         </div>
-        <div className="about-image col col-md-5 d-flex justify-content-center">
-          <img
-            src={MyPic}
-            rel="Profile picture of Merick Icy Agustin"
-            className={classes["img-profile"] + " image-fluid"}
-          />
-        </div>
       </div>
-      <div className={classes["experience-container"] + " pb-1"}>
-        <div className="container pt-3">
+      <div className={classes["experience-container"] + " pb-1 px-1 px-md-0"}>
+        <div className="container pt-3 px-0 ">
           <h1>Experience</h1>
           <ul className="experiences d-flex flex-column gap-3">
             <li className="experience d-flex flex-column">

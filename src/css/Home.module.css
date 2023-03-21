@@ -1,19 +1,39 @@
 .img-profile {
   border: 0.5rem solid rgba(51, 51, 51, 0.2);
   border-radius: 100%;
-  height: 24rem;
-  width: 24rem;
+  height: 20rem;
+  width: 20rem;
 }
 
-/* @media (min-width: 1406px) {
+@media (min-width: 924px) {
   .img-profile {
     height: 24rem;
     width: 24rem;
   }
-} */
+}
 
 .name {
   font-size: 1.6rem;
+}
+
+.download-cv:link,
+.download-cv:visited {
+  color: #313f4c;
+  background-color: #a2d2ff;
+  border-radius: 50px;
+  padding: 0.8rem 1rem;
+}
+
+.download-cv:hover,
+.download-cv:active {
+  background-color: #bde0fe;
+}
+
+.direct-project-site {
+  color: #313f4c;
+  background-color: #a2d2ff;
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
 }
 
 .about-content {
