@@ -29,12 +29,12 @@
   background-color: #bde0fe;
 }
 
-.direct-project-site {
+/* .direct-project-site {
   color: #313f4c;
   background-color: #a2d2ff;
   border-radius: 20px;
   padding: 0.8rem 1rem;
-}
+} */
 
 .about-content {
   font-size: 1.4rem;
@@ -47,4 +47,26 @@
 .company-name {
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.skill-list {
+  list-style: none;
+}
+
+.skill {
+  /* border: 2px solid #313f4c; */
+  /* border-radius: 100%; */
+  /* padding: 1.4rem; */
+}
+
+.skill:hover > .skill-icon {
+  /* background-color: #a2d2ff; */
+  cursor: pointer;
+  transform: scale(110%);
+}
+
+.skill-icon {
+  width: 5rem;
+  height: 5rem;
+  transition: all 0.4s ease;
 }
