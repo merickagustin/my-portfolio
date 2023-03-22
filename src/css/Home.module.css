@@ -22,6 +22,7 @@
   background-color: #a2d2ff;
   border-radius: 50px;
   padding: 0.8rem 1rem;
+  transition: all 0.3s;
 }
 
 .download-cv:hover,
@@ -53,14 +54,14 @@
   list-style: none;
 }
 
-.skill {
-  /* border: 2px solid #313f4c; */
-  /* border-radius: 100%; */
-  /* padding: 1.4rem; */
+.skill-list span {
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
 }
 
 .skill:hover > .skill-icon {
   /* background-color: #a2d2ff; */
+  /* border-radius: 100%; */
   cursor: pointer;
   transform: scale(110%);
 }
