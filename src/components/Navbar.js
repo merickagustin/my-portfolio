@@ -1,4 +1,4 @@
-import React from "react";
+import { Link, BrowserRouter } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -24,19 +24,19 @@ function Navbar() {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/" className="nav-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/projects" className="nav-link">
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/" className="nav-link">
                 Contacts
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
