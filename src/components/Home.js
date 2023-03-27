@@ -18,7 +18,7 @@ const curYear = new Date().getFullYear();
 function About() {
   return (
     <div className="row justify-content-center">
-      <div className="about-container px-1 py-3 px-lg-3 py-xl-4 row row-cols-1 row-cols-md-2 gap-2 justify-content-center">
+      <section className="about-container px-1 py-3 px-lg-3 py-xl-4 row row-cols-1 row-cols-md-2 gap-2 justify-content-center">
         <div className="about-image px-1 px-md-0 col col-md-4 d-flex justify-content-center">
           <img
             src={MyPic}
@@ -47,8 +47,8 @@ function About() {
             <a href="#">View Projects &rarr;</a>
           </div>
         </div>
-      </div>
-      <div className="bg-secondary pb-1 px-1 px-md-0">
+      </section>
+      <section className="bg-secondary pb-1 px-1 px-md-0">
         <div className="container pt-3 px-0 ">
           <h1>Experience</h1>
           <ul className="experiences d-flex flex-column gap-3">
@@ -88,8 +88,8 @@ function About() {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="pb-1 px-1 px-md-0">
+      </section>
+      <section className="pb-1 px-1 px-md-0">
         <div className="container pt-3 px-0 ">
           <h1>Skills</h1>
         </div>
@@ -206,7 +206,7 @@ function About() {
             <span className="d-flex justify-content-center fw-normal">CSS</span>
           </li>
         </ul>
-      </div>
+      </section>
     </div>
   );
 }
