@@ -41,7 +41,6 @@ function About() {
           <p>I'm currently exploring new techs in building web applications.</p>
           <div className="about-links d-flex justify-content-center align-items-center gap-1">
             <a href="#" className={classes["download-cv"]}>
-              {/* <a href="#" className="bg-primary link-light rounded-pill"> */}
               Download CV
             </a>
             <a href="#">View Projects &rarr;</a>

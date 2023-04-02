@@ -1,5 +1,21 @@
 import { Link } from "react-router-dom";
 
+const navItems = [
+  { navName: "Home", link: "/" },
+  { navName: "Projects", link: "/projects" },
+  { navName: "Contacts", link: "/" },
+];
+
+const renderNavItems = (navItems) => {
+  return navItems.map((navItems) => (
+    <li className="nav-item">
+      <Link to={navItems.link} className="nav-link">
+        {navItems.navName}
+      </Link>
+    </li>
+  ));
+};
+
 function Navbar() {
   return (
     <nav className="navbar bg-primary navbar-expand-lg fs-4">
@@ -22,23 +38,7 @@ function Navbar() {
           className="collapse navbar-collapse justify-content-end"
           id="navbarToggleMenu"
         >
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/projects" className="nav-link">
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Contacts
-              </Link>
-            </li>
-          </ul>
+          <ul className="navbar-nav">{renderNavItems(navItems)}</ul>
         </div>
       </div>
     </nav>
