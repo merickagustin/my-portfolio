@@ -18,6 +18,8 @@
 
 .download-cv:link,
 .download-cv:visited {
+  font-weight: 600;
+  text-decoration: none;
   color: #313f4c;
   background-color: #a2d2ff;
   border-radius: 50px;

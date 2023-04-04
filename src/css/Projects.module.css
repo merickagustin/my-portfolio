@@ -1,3 +1,34 @@
-.projects {
-  max-width: 70rem;
+.project-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.project-date {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #b5dbff;
+}
+
+.tech-tags {
+  list-style: none;
+}
+
+.tech-tags span {
+  font-size: 0.8rem;
+}
+
+.link-highlight:link,
+.link-highlight:visited {
+  font-weight: 600;
+  text-decoration: none;
+  color: #313f4c;
+  background-color: #a2d2ff;
+  border-radius: 50px;
+  padding: 0.8rem 1rem;
+  transition: all 0.3s;
+}
+
+.link-highlight:hover,
+.link-highlight:active {
+  background-color: #bde0fe;
 }

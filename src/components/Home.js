@@ -9,6 +9,7 @@ Extra extra large	xxl	≥1400px
 */
 
 import React from "react";
+import { Link } from "react-router-dom";
 import MyPic from "../img/my_picture.jpg";
 import classes from "../css/Home.module.css";
 
@@ -17,7 +18,7 @@ const curYear = new Date().getFullYear();
 
 function About() {
   return (
-    <div className="row justify-content-center">
+    <div className="container-fluid row justify-content-center">
       <section className="about-container px-1 py-3 px-lg-3 py-xl-4 row row-cols-1 row-cols-md-2 gap-2 justify-content-center">
         <div className="about-image px-1 px-md-0 col col-md-4 d-flex justify-content-center">
           <img
@@ -43,7 +44,7 @@ function About() {
             <a href="#" className={classes["download-cv"]}>
               Download CV
             </a>
-            <a href="#">View Projects &rarr;</a>
+            <Link to="/projects">View Projects &rarr;</Link>
           </div>
         </div>
       </section>
