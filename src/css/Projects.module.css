@@ -1,29 +1,32 @@
 .project-title {
   font-weight: 600;
   font-size: 1.6rem;
+  color: #3974ab;
 }
 
 .project-date {
   font-weight: 500;
   font-size: 1rem;
-  color: #b5dbff;
-}
-
-.tech-tags {
-  list-style: none;
 }
 
 .tech-tags span {
+  margin: 0.2rem;
+  font-weight: 700;
+  color: #313f4c;
   font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  background-color: #bde0fe;
 }
 
 .link-highlight:link,
 .link-highlight:visited {
+  text-align: center;
   font-weight: 600;
   text-decoration: none;
   color: #313f4c;
   background-color: #a2d2ff;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 0.8rem 1rem;
   transition: all 0.3s;
 }
