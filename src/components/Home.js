@@ -15,6 +15,14 @@ import classes from "../css/Home.module.css";
 
 const startYear = new Date("03/01/2014").getFullYear();
 const curYear = new Date().getFullYear();
+const downloadFileAtURL = function () {
+  const aTag = document.createElement("a");
+  aTag.href = "/CV_Merick Icy Agustin.doc";
+  aTag.setAttribute("download", "CV_Merick Icy Agustin");
+  document.body.appendChild(aTag);
+  aTag.click();
+  aTag.remove();
+};
 
 function About() {
   return (
@@ -23,7 +31,7 @@ function About() {
         <div className="about-image px-1 px-md-0 col col-md-4 d-flex justify-content-center">
           <img
             src={MyPic}
-            rel="Profile picture of Merick Icy Agustin"
+            alt="Merick Icy Agustin"
             className={classes["img-profile"] + " image-fluid"}
           />
         </div>
@@ -41,9 +49,14 @@ function About() {
           </p>
           <p>I'm currently exploring new techs in building web applications.</p>
           <div className="about-links d-flex justify-content-center align-items-center gap-1">
-            <a href="#" className={classes["download-cv"]}>
+            <button
+              onClick={() => {
+                downloadFileAtURL();
+              }}
+              className={classes["download-cv"]}
+            >
               Download CV
-            </a>
+            </button>
             <Link to="/projects">View Projects &rarr;</Link>
           </div>
         </div>

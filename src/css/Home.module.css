@@ -16,28 +16,20 @@
   font-size: 1.6rem;
 }
 
-.download-cv:link,
-.download-cv:visited {
+.download-cv {
   font-weight: 600;
   text-decoration: none;
   color: #313f4c;
   background-color: #a2d2ff;
+  border: none;
   border-radius: 10px;
   padding: 0.8rem 1rem;
   transition: all 0.3s;
 }
 
-.download-cv:hover,
-.download-cv:active {
+.download-cv:hover {
   background-color: #bde0fe;
 }
-
-/* .direct-project-site {
-  color: #313f4c;
-  background-color: #a2d2ff;
-  border-radius: 20px;
-  padding: 0.8rem 1rem;
-} */
 
 .about-content {
   font-size: 1.4rem;
@@ -57,13 +49,12 @@
 }
 
 .skill-list span {
-  font-size: 1.6rem;
+  font-weight: 700 !important;
+  font-size: 1.2rem;
   margin-top: 0.8rem;
 }
 
 .skill:hover > .skill-icon {
-  /* background-color: #a2d2ff; */
-  /* border-radius: 100%; */
   cursor: pointer;
   transform: scale(110%);
 }

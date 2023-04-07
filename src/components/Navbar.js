@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const navItems = [
   { navName: "Home", link: "/" },
   { navName: "Projects", link: "/projects" },
-  { navName: "Contacts", link: "/" },
+  { navName: "Contacts", link: "/contacts" },
 ];
 
 const renderNavItems = (navItems) => {
-  return navItems.map((navItems) => (
-    <li className="nav-item">
+  return navItems.map((navItems, i) => (
+    <li key={i} className="nav-item">
       <Link to={navItems.link} className="nav-link">
         {navItems.navName}
       </Link>
