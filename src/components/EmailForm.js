@@ -27,7 +27,7 @@ function EmailForm() {
   };
 
   return (
-    <form className="cta-form px-3" ref={form} onSubmit={sendEmail}>
+    <form className="cta-form px-md-2 px-xl-3" ref={form} onSubmit={sendEmail}>
       <h3 className="text-primary">Contact Me</h3>
       <div className="mb-1 row">
         <div className="col">
@@ -68,12 +68,16 @@ function EmailForm() {
           name="message"
           className="form-control"
           id="exampleFormControlTextarea1"
-          rows="5"
+          rows="8"
           required
         ></textarea>
       </div>
       <div className="col-auto">
-        <button type="submit" className="btn btn-primary mb-3" value="Send">
+        <button
+          type="submit"
+          className="btn btn-primary btn-lg text-dark mb-3"
+          value="Send"
+        >
           Submit
         </button>
       </div>

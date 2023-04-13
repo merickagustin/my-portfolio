@@ -28,5 +28,9 @@ $spacers: (
   5: $spacer * 4,
 );
 
+/****************BUTTON**********************/
+$btn-font-weight: 500;
+$input-btn-font-size-lg: 1.4rem;
+
 //IMPORT BOOTSTRAP
 @import "../node_modules/bootstrap/scss/bootstrap";

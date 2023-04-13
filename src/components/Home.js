@@ -8,7 +8,6 @@ Extra extra large	xxl	≥1400px
 
 */
 
-import React from "react";
 import { Link } from "react-router-dom";
 import MyPic from "../img/my_picture.jpg";
 import classes from "../css/Home.module.css";
@@ -58,7 +57,7 @@ function About() {
               onClick={() => {
                 downloadFileAtURL();
               }}
-              className={classes["download-cv"]}
+              className="btn btn-primary btn-lg text-dark"
             >
               Download CV
             </button>

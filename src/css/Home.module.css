@@ -16,21 +16,6 @@
   font-size: 1.6rem;
 }
 
-.download-cv {
-  font-weight: 600;
-  text-decoration: none;
-  color: #313f4c;
-  background-color: #a2d2ff;
-  border: none;
-  border-radius: 10px;
-  padding: 0.8rem 1rem;
-  transition: all 0.3s;
-}
-
-.download-cv:hover {
-  background-color: #bde0fe;
-}
-
 .about-content {
   font-size: 1.4rem;
 }
