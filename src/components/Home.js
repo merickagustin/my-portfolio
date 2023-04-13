@@ -26,7 +26,12 @@ const downloadFileAtURL = function () {
 
 function About() {
   return (
-    <div className="container-fluid row justify-content-center">
+    <div
+      className={
+        classes["about-container"] +
+        " container-fluid row justify-content-center"
+      }
+    >
       <section className="about-container px-1 py-3 px-lg-3 py-xl-4 row row-cols-1 row-cols-md-2 gap-2 justify-content-center">
         <div className="about-image px-1 px-md-0 col col-md-4 d-flex justify-content-center">
           <img

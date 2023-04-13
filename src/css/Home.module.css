@@ -35,8 +35,9 @@
   font-size: 1.4rem;
 }
 
-.experience-container {
-  background-color: #bde0fe;
+.about-container {
+  margin: 0;
+  padding: 0;
 }
 
 .company-name {
