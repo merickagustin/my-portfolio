@@ -1,4 +1,4 @@
-import EmailForm from "./EmailForm";
+import EmailForm from "./subcomponents/EmailForm";
 
 function Contacts() {
   return (
