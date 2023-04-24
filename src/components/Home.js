@@ -17,6 +17,7 @@ import ReactLogo from "../components/subcomponents/ReactLogo.js";
 import BootStrapLogo from "./subcomponents/BootStrapLogo.js";
 import HTML5Logo from "./subcomponents/HTML5Logo.js";
 import CSSLogo from "./subcomponents/CSSLogo.js";
+import SocialsSub from "./subcomponents/SocialsSub.js";
 
 const startYear = new Date("03/01/2014").getFullYear();
 const curYear = new Date().getFullYear();
@@ -33,17 +34,29 @@ function About() {
   return (
     <div
       className={
-        classes["about-container"] +
+        classes["home-container"] +
         " container-fluid row justify-content-center"
       }
     >
-      <section className="about-container px-1 py-3 px-lg-3 py-xl-4 row row-cols-1 row-cols-md-2 gap-2 justify-content-center">
-        <div className="about-image px-1 px-md-0 col col-md-4 d-flex justify-content-center">
+      <section className="about-section px-1 py-3 px-lg-3 py-xl-4 row row-cols-1 row-cols-md-2 gap-2 justify-content-center">
+        <div className="about-image px-1 px-md-0 col col-md-4 d-flex flex-column justify-content-center">
           <img
             src={myPic}
             alt="Merick Icy Agustin"
-            className={classes["img-profile"] + " image-fluid"}
+            className={
+              classes["img-profile"] + " image-fluid align-self-center"
+            }
           />
+          <div className="d-flex flex-column mt-2">
+            <div className="d-flex flex-row justify-content-center">
+              <Link className={classes["email-link"]} to="/contacts">
+                merickic.agustin@gmail.com
+              </Link>
+            </div>
+            <div className="d-flex flex-row justify-content-center mt-1">
+              <SocialsSub />
+            </div>
+          </div>
         </div>
         <div className={classes["about-content"] + " col"}>
           <h1>About</h1>
@@ -71,7 +84,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="bg-secondary pb-1 px-1 px-md-0">
+      <section className="experience-section bg-secondary pb-1 px-1 px-md-0">
         <div className="container pt-3 px-0 ">
           <h1>Experience</h1>
           <ul className="experiences d-flex flex-column gap-3">
@@ -112,7 +125,7 @@ function About() {
           </ul>
         </div>
       </section>
-      <section className="pb-1 px-1 px-md-0">
+      <section className="skills-section pb-1 px-1 px-md-0">
         <div className="container pt-3 px-0 ">
           <h1>Skills</h1>
         </div>

@@ -1,0 +1,15 @@
+.social-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.social-link:link,
+.social-link:visited {
+  cursor: pointer;
+}
+
+.social-link:hover > svg,
+.social-link:active > svg {
+  fill: #346b9f;
+  transition: all 0.3s;
+}

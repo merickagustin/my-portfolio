@@ -7,10 +7,10 @@ const navItems = [
 ];
 
 const renderNavItems = (navItems) => {
-  return navItems.map((navItems, i) => (
+  return navItems.map((navItem, i) => (
     <li key={i} className="nav-item">
-      <Link to={navItems.link} className="nav-link">
-        {navItems.navName}
+      <Link to={navItem.link} className="nav-link">
+        {navItem.navName}
       </Link>
     </li>
   ));

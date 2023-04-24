@@ -1,4 +1,5 @@
-import EmailForm from "./subcomponents/EmailForm";
+import EmailForm from "./subcomponents/EmailForm.js";
+import SocialsSub from "./subcomponents/SocialsSub.js";
 
 function Contacts() {
   return (
@@ -7,6 +8,10 @@ function Contacts() {
         <div className="container">
           <h1>Contacts</h1>
           <EmailForm />
+          <div className="px-md-2 px-xl-3">
+            <h3 className="text-primary">Socials</h3>
+            <SocialsSub />
+          </div>
         </div>
       </div>
     </section>

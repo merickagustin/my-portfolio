@@ -12,6 +12,11 @@
   }
 }
 
+.email-link:link,
+.email-link:visited {
+  font-size: 1.6rem;
+}
+
 .name {
   font-size: 1.6rem;
 }
@@ -20,7 +25,7 @@
   font-size: 1.4rem;
 }
 
-.about-container {
+.home-container {
   margin: 0;
   padding: 0;
 }
