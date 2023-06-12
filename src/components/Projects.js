@@ -18,6 +18,14 @@ const projectCards = [
     sourceWebsite: "",
     techs: ["HTML5", "JavaScript", "CSS", "React.js", "BootStrap5"],
   },
+  {
+    projectTitle: "Sales Rest Api",
+    projectDate: "(May 2023)",
+    projectDescription: "Rest Api built in Java Springboot.",
+    sourceCodeLink: "https://github.com/merickagustin/sales-rest-api",
+    sourceWebsite: "",
+    techs: ["Java", "MySQL"],
+  },
 ];
 
 const renderProjectCards = (projectCards) => {

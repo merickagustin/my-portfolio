@@ -20,9 +20,9 @@ function Navbar() {
   return (
     <nav className="navbar bg-primary navbar-expand-lg fs-4">
       <div className="container-fluid fw-bold">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           Merick Icy Agustin
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

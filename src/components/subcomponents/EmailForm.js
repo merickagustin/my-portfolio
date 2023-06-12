@@ -16,6 +16,7 @@ function EmailForm() {
       )
       .then(
         (result) => {
+          alert("Email Sent.");
           console.log(result.text);
         },
         (error) => {
@@ -31,10 +32,11 @@ function EmailForm() {
       <h3 className="text-primary">Contact Me</h3>
       <div className="mb-1 row">
         <div className="col">
-          <label htmlFor="exampleFormControlInput1" className="form-label">
+          <label htmlFor="full-name-control-form" className="form-label">
             Full Name
           </label>
           <input
+            id="full-name-control-form"
             name="from-name"
             type="input"
             className="form-control"
@@ -42,10 +44,11 @@ function EmailForm() {
           />
         </div>
         <div className="col">
-          <label htmlFor="exampleFormControlInput1" className="form-label">
+          <label htmlFor="email-control-form" className="form-label">
             Your Email
           </label>
           <input
+            id="email-control-form"
             name="email-from"
             type="email"
             className="form-control"
@@ -55,19 +58,24 @@ function EmailForm() {
         </div>
       </div>
       <div className="col">
-        <label htmlFor="exampleFormControlInput1" className="form-label">
+        <label htmlFor="subject-control-form" className="form-label">
           Subject
         </label>
-        <input name="subject" type="text" className="form-control" />
+        <input
+          id="subject-control-form"
+          name="subject"
+          type="text"
+          className="form-control"
+        />
       </div>
       <div className="mb-1">
-        <label htmlFor="exampleFormControlTextarea1" className="form-label">
+        <label htmlFor="message-control-form" className="form-label">
           Message
         </label>
         <textarea
+          id="message-control-form"
           name="message"
           className="form-control"
-          id="exampleFormControlTextarea1"
           rows="8"
           required
         ></textarea>

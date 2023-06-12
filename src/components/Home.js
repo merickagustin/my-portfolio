@@ -18,6 +18,7 @@ import BootStrapLogo from "./subcomponents/BootStrapLogo.js";
 import HTML5Logo from "./subcomponents/HTML5Logo.js";
 import CSSLogo from "./subcomponents/CSSLogo.js";
 import SocialsSub from "./subcomponents/SocialsSub.js";
+import Skeleton from "react-loading-skeleton";
 
 const startYear = new Date("03/01/2014").getFullYear();
 const curYear = new Date().getFullYear();
