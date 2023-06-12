@@ -5,6 +5,7 @@ import Contacts from "./components/Contacts.js";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import { useEffect } from "react";
 
 function App() {
   return (

@@ -7,9 +7,14 @@ const navItems = [
 ];
 
 const renderNavItems = (navItems) => {
+  const scrollToTop = () => {
+    //scroll to top on page load
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return navItems.map((navItem, i) => (
     <li key={i} className="nav-item">
-      <Link to={navItem.link} className="nav-link">
+      <Link onClick={scrollToTop} to={navItem.link} className="nav-link">
         {navItem.navName}
       </Link>
     </li>
@@ -17,10 +22,15 @@ const renderNavItems = (navItems) => {
 };
 
 function Navbar() {
+  const scrollToTop = () => {
+    //scroll to top on page load
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <nav className="navbar bg-primary navbar-expand-lg fs-4">
       <div className="container-fluid fw-bold">
-        <Link className="navbar-brand" to="/">
+        <Link onClick={scrollToTop} className="navbar-brand" to="/">
           Merick Icy Agustin
         </Link>
         <button
