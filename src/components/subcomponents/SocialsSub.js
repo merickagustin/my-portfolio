@@ -3,7 +3,7 @@ import GithubLogo from "./GithubLogo.js";
 import { Link } from "react-router-dom";
 import classes from "../../css/Socials.module.css";
 import { useState } from "react";
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import Skeleton from "react-loading-skeleton";
 
 function SocialsForm() {
   const [isLoading, setLoading] = useState(true);
