@@ -67,7 +67,7 @@ function About() {
             <div className="d-flex flex-column mt-2">
               {isLoading ? (
                 <>
-                  <Skeleton height={100} />
+                  <Skeleton height={25} />
                 </>
               ) : (
                 <>
@@ -76,11 +76,11 @@ function About() {
                       merickic.agustin@gmail.com
                     </Link>
                   </div>
-                  <div className="d-flex flex-row justify-content-center mt-1">
-                    <SocialsSub />
-                  </div>
                 </>
               )}
+              <div className="d-flex flex-row justify-content-center mt-1">
+                <SocialsSub />
+              </div>
             </div>
           </div>
           <div className={classes["about-content"] + " col"}>
