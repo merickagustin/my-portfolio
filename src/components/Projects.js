@@ -27,7 +27,7 @@ const projectCards = [
     projectDescription: "Rest Api built in Java Springboot.",
     sourceCodeLink: "https://github.com/merickagustin/sales-rest-api",
     sourceWebsite: "",
-    techs: ["Java", "MySQL"],
+    techs: ["Java", "MySQL", "Spring Boot", "JUnit"],
   },
 ];
 
