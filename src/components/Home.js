@@ -139,9 +139,33 @@ function About() {
                 <Skeleton count={6} />
               ) : (
                 <li className="experience d-flex flex-column">
+                  <p className="h3">SOFTWARE DEVELOPER</p>
+                  <p className={classes["company-name"]}>
+                    IT Group, Inc. (May 2023 – Present)
+                  </p>
+                  <ul className="d-flex flex-column gap-1">
+                    <li>
+                      Participated in the system design, development and
+                      implementation of Netsuite Customization for the client
+                    </li>
+                    <li>
+                      Played in key role as the main developer for the majority
+                      of the projects assigned
+                    </li>
+                    <li>
+                      Deployed to the project site for the on-going development
+                      project
+                    </li>
+                  </ul>
+                </li>
+              )}
+              {isLoading ? (
+                <Skeleton count={6} />
+              ) : (
+                <li className="experience d-flex flex-column">
                   <p className="h3">SOFTWARE ENGINEER</p>
                   <p className={classes["company-name"]}>
-                    N-PAX Philippines, Inc. (March 2017 – Present)
+                    N-PAX Philippines, Inc. (March 2017 – May 2023)
                   </p>
                   <ul className="d-flex flex-column gap-1">
                     <li>
