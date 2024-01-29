@@ -149,12 +149,8 @@ function About() {
                       implementation of Netsuite Customization for the client
                     </li>
                     <li>
-                      Played in key role as the main developer for the majority
+                      Played a key role as the main developer for the majority
                       of the projects assigned
-                    </li>
-                    <li>
-                      Deployed to the project site for the on-going development
-                      project
                     </li>
                   </ul>
                 </li>
