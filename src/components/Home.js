@@ -25,7 +25,7 @@ const startYear = new Date("03/01/2014").getFullYear();
 const curYear = new Date().getFullYear();
 const downloadFileAtURL = function () {
   const aTag = document.createElement("a");
-  aTag.href = "/CV_Merick Icy Agustin.doc";
+  aTag.href = "/CV_Merick Icy Agustin.pdf";
   aTag.setAttribute("download", "CV_Merick Icy Agustin");
   document.body.appendChild(aTag);
   aTag.click();
